@@ -67,6 +67,12 @@ public class MeasurePopup extends PopupWindow implements OnClickListener {
 					edt_measureresult.setText(" "+df.format(arg0/1000000)+"平方公里");
 				}
 			}
+
+			@Override
+			public void angleMeasured(double arg0, Point arg1) {
+				// TODO Auto-generated method stub
+				
+			}
 		});
 	}
 	

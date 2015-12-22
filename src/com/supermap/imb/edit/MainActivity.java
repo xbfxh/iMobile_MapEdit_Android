@@ -257,6 +257,12 @@ public class MainActivity extends Activity implements OnClickListener, OnTouchLi
 			// TODO Auto-generated method stub
 			
 		}
+
+		@Override
+		public void angleMeasured(double arg0, Point arg1) {
+			// TODO Auto-generated method stub
+			
+		}
 	};
 	
 	@Override
