@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.PopupWindow;
 
+import java.util.ArrayList;
+
 import com.supermap.imb.appconfig.MyApplication;
 import com.supermap.mapping.Action;
 import com.supermap.mapping.ActionChangedListener;
@@ -50,6 +52,12 @@ public class SubmitInfo extends PopupWindow implements OnClickListener{
 			@Override
 			public void geometrySelected(GeometrySelectedEvent event) {
 				mMapControl.appointEditGeometry(event.getGeometryID(), event.getLayer());
+				
+			}
+
+			@Override
+			public void geometryMultiSelected(ArrayList<GeometrySelectedEvent> arg0) {
+				// TODO Auto-generated method stub
 				
 			}
 		});

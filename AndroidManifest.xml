@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.supermap.imb.edit"
       android:versionCode="1"
-      android:versionName="1.1">
+      android:versionName="1.2">
       
       <!-- Add SuperMap iMobile basic permission to AndroidMainifest.xml -->
       <uses-permission android:name="android.permission.INTERNET"></uses-permission>

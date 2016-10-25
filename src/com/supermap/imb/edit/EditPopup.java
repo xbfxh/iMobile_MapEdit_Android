@@ -10,6 +10,8 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
 
+import java.util.ArrayList;
+
 import com.supermap.mapping.Action;
 import com.supermap.mapping.ActionChangedListener;
 import com.supermap.mapping.GeometrySelectedEvent;
@@ -67,6 +69,12 @@ public class EditPopup extends PopupWindow implements OnClickListener{
 			public void geometrySelected(GeometrySelectedEvent event) {
 				mMapControl.appointEditGeometry(event.getGeometryID(), event.getLayer());
 				enableEdit();
+			}
+
+			@Override
+			public void geometryMultiSelected(ArrayList<GeometrySelectedEvent> arg0) {
+				// TODO Auto-generated method stub
+				
 			}
 		});
 		
